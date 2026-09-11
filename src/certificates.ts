@@ -17,6 +17,12 @@ export const certificatesPt: ICertificates[] = [
         live: ["Ver Certificado", "Ver Emissor"],
         url: ["certificates/itau/WG6XOXWD.pdf", "https://dio.me/certificate/WG6XOXWD"],
     },
+    {
+        type: "Bootcamp",
+        title: "Introdução à Engenharia de Prompts", code: "XTAHJBE3",
+        live: ["Ver Certificado", "Ver Emissor"],
+        url: ["certificates/itau/XTAHJBE3.pdf", "https://dio.me/certificate/XTAHJBE3"],
+    },
 ];
 
 export const certificatesEn: ICertificates[] = [
@@ -35,5 +41,11 @@ export const certificatesEn: ICertificates[] = [
         title: "Boosting Your Studies and Career with AI (Chatbots, Copilots, and Agents)", code: "WG6XOXWD",
         live: ["View Certificate", "View Issuer"],
         url: ["certificates/itau/WG6XOXWD.pdf", "https://dio.me/certificate/WG6XOXWD"],
+    },
+    {
+        type: "Bootcamp",
+        title: "Introduction to Prompt Engineering", code: "WG6XOXWD",
+        live: ["View Certificate", "View Issuer"],
+        url: ["certificates/itau/XTAHJBE3.pdf", "https://dio.me/certificate/XTAHJBE3"],
     },
 ];
