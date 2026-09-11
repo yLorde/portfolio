@@ -112,7 +112,7 @@ export function App() {
           </div>
         </section>
 
-        {/* Diplomas */}
+        {/* Certificate */}
         <section id="certificates" className="py-16 border-t border-zinc-900/60">
           <div className="max-w-5xl mx-auto px-6 flex flex-col relative">
             <h2 className="text-xs font-medium text-zinc-500 uppercase tracking-[0.2em] mb-10 font-mono">
@@ -126,16 +126,27 @@ export function App() {
                 >
                   <div className="text-xs font-medium text-primary font-mono">{s.type}</div>
                   <div className="text-sm text-zinc-300 leading-relaxed">{s.title}</div>
-                  <div className="mt-auto">
+                  <div className="mt-auto flex flex-col">
                     {/* <hr className="opacity-10 pt-1" /> */}
-                    {s.live && (
+                    {s.live[0] && (
                       <a
-                        href={s.url}
+                        href={s.url[0]}
                         target="_blank"
                         rel="noreferrer"
                         className="text-zinc-400 hover:text-primary transition-colors"
                       >
-                        {s.live} ↗
+                        {s.live[0]} ↗
+                      </a>
+                    )}
+
+                    {s.live[1] && (
+                      <a
+                        href={s.url[1]}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-zinc-400 hover:text-primary transition-colors"
+                      >
+                        {s.live[1]} ↗
                       </a>
                     )}
                   </div>

@@ -18,8 +18,16 @@ export const langs = {
         ],
         certificatesTitle: "Certificados",
         certificates: [
-            // { type: "Bootcamp", title: "Boas vindas ao Bootcamp Itaú - Java com Inteligência Artificial", code: "KYT9BTCX", url: "/certificates/itau/KYT9BTCX.pdf", live: "Ver certificado" },
-            { type: "Bootcamp", title: "Fundamentos da IA Moderna: Machine Learning, LLMs, IA Generativa e Agentes", code: "MTBVF70J", url: "/certificates/itau/MTBVF70J.pdf", live: "Ver certificado" },
+            {
+                type: "Bootcamp", title: "Boas vindas ao Bootcamp Itaú - Java com Inteligência Artificial", code: "KYT9BTCX",
+                live: ["Ver certificado", "Ver Emissor"],
+                url: ["/certificates/itau/KYT9BTCX.pdf", "https://dio.me/certificate/KYT9BTCX"],
+            },
+            {
+                type: "Bootcamp", title: "Fundamentos da IA Moderna: Machine Learning, LLMs, IA Generativa e Agentes", code: "MTBVF70J",
+                live: ["Ver Certificado", "Ver Emissor"],
+                url: ["/certificates/itau/MTBVF70J.pdf", "https://dio.me/certificate/MTBVF70J"]
+            },
         ],
         projectsTitle: "Projetos em Destaque",
         projectsSub:
@@ -50,8 +58,16 @@ export const langs = {
         ],
         certificatesTitle: "Certificates",
         certificates: [
-            // { type: "Bootcamp", title: "Welcome to the Itaú Bootcamp – Java with Artificial Intelligence", code: "KYT9BTCX", url: "/certificates/itau/KYT9BTCX.pdf", live: "View Certificate" },
-            { type: "Bootcamp", title: "Fundamentals of Modern AI: Machine Learning, LLMs, Generative AI, and Agents", code: "MTBVF70J", url: "/certificates/itau/MTBVF70J.pdf", live: "View Certificate" },
+            {
+                type: "Bootcamp", title: "Welcome to the Itaú Bootcamp - Java with Artificial Intelligence", code: "KYT9BTCX",
+                live: ["View Certificate", "View Issuer"],
+                url: ["/certificates/itau/KYT9BTCX.pdf", "https://dio.me/certificate/KYT9BTCX"],
+            },
+            {
+                type: "Bootcamp", title: "Fundamentals of Modern AI: Machine Learning, LLMs, Generative AI, and Agents", code: "MTBVF70J",
+                live: ["View Certificate", "View Issuer"],
+                url: ["/certificates/itau/MTBVF70J.pdf", "https://dio.me/certificate/MTBVF70J"],
+            },
         ],
         projectsTitle: "Featured Projects",
         projectsSub:
