@@ -4,7 +4,7 @@ export type Project = {
     descPt: string;
     descEn: string;
     techs: string[];
-    repo: string;
+    repo?: string;
     live?: string;
     initials: string;
     hue: string;

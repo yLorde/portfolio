@@ -12,15 +12,15 @@ export function App() {
       {/* Nav */}
       <nav className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-zinc-900/60">
         <div className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
-          <a href="#top" className="text-sm font-medium tracking-tight text-zinc-100">
-            yLorde<span className="text-primary">.</span>
+          <a draggable={false} href="#top" className="flex items-center text-sm font-bold tracking-tight text-zinc-100">
+            yLorde<span className="text-primary font-medium">.com.br</span>
           </a>
           <div className="flex items-center gap-6">
             <div className="hidden sm:flex gap-5">
-              <a href="#stack" className="text-xs text-zinc-500 hover:text-zinc-200 transition-colors">{c.nav.stack}</a>
-              <a href="#certificates" className="text-xs text-zinc-500 hover:text-zinc-200 transition-colors">{c.nav.certificates}</a>
-              <a href="#projetos" className="text-xs text-zinc-500 hover:text-zinc-200 transition-colors">{c.nav.projects}</a>
-              <a href="#contato" className="text-xs text-zinc-500 hover:text-zinc-200 transition-colors">{c.nav.contact}</a>
+              <a href="#stack" draggable={false} className="text-xs text-zinc-500 hover:text-zinc-200 transition-colors">{c.nav.stack}</a>
+              <a href="#certificates" draggable={false} className="text-xs text-zinc-500 hover:text-zinc-200 transition-colors">{c.nav.certificates}</a>
+              <a href="#projetos" draggable={false} className="text-xs text-zinc-500 hover:text-zinc-200 transition-colors">{c.nav.projects}</a>
+              <a href="#contato" draggable={false} className="text-xs text-zinc-500 hover:text-zinc-200 transition-colors">{c.nav.contact}</a>
             </div>
             <div className="h-4 w-px bg-zinc-800 hidden sm:block" />
             <div className="flex items-center bg-zinc-900 ring-1 ring-white/5 rounded-full p-1">
@@ -43,6 +43,7 @@ export function App() {
               href="https://github.com/yLorde"
               target="_blank"
               rel="noreferrer"
+              draggable={false}
               className="text-xs text-zinc-500 hover:text-zinc-200 transition-colors hidden md:inline"
             >
               GitHub ↗
@@ -78,12 +79,14 @@ export function App() {
             <div className="flex flex-wrap gap-3">
               <a
                 href="#projetos"
+                draggable={false}
                 className="inline-flex items-center bg-zinc-100 text-zinc-900 text-sm font-medium px-4 py-2 rounded-md ring-1 ring-zinc-100 hover:bg-white transition-colors"
               >
                 {c.ctaProjects}
               </a>
               <a
                 href="#contato"
+                draggable={false}
                 className="inline-flex items-center bg-zinc-900 text-zinc-100 text-sm font-medium px-4 py-2 rounded-md ring-1 ring-white/10 hover:ring-white/20 transition-colors"
               >
                 {c.ctaContact}
@@ -133,6 +136,7 @@ export function App() {
                         href={s.url[0]}
                         target="_blank"
                         rel="noreferrer"
+                        draggable={false}
                         className="text-zinc-400 hover:text-primary transition-colors"
                       >
                         {s.live[0]} ↗
@@ -144,6 +148,7 @@ export function App() {
                         href={s.url[1]}
                         target="_blank"
                         rel="noreferrer"
+                        draggable={false}
                         className="text-zinc-400 hover:text-primary transition-colors"
                       >
                         {s.live[1]} ↗
@@ -203,19 +208,23 @@ export function App() {
                       ))}
                     </div>
                     <div className="flex gap-4 pt-2 text-xs">
-                      <a
-                        href={p.repo}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="text-zinc-400 hover:text-primary transition-colors"
-                      >
-                        {c.repo} →
-                      </a>
+                      {p.repo && (
+                        <a
+                          href={p.repo}
+                          target="_blank"
+                          rel="noreferrer"
+                          draggable={false}
+                          className="text-zinc-400 hover:text-primary transition-colors"
+                        >
+                          {c.repo} →
+                        </a>
+                      )}
                       {p.live && (
                         <a
                           href={p.live}
                           target="_blank"
                           rel="noreferrer"
+                          draggable={false}
                           className="text-zinc-400 hover:text-primary transition-colors"
                         >
                           {c.live} ↗
@@ -242,15 +251,16 @@ export function App() {
               <div className="flex flex-col gap-4">
                 <a
                   href="mailto:contato@ylorde.com.br"
+                  draggable={false}
                   className="text-lg font-medium text-zinc-100 hover:text-primary transition-colors underline underline-offset-8 decoration-zinc-800 hover:decoration-primary/50"
                 >
                   contato@ylorde.com.br
                 </a>
                 <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-zinc-500">
-                  <a href="https://github.com/yLorde" target="_blank" rel="noreferrer" className="hover:text-zinc-100 transition-colors">GitHub</a>
-                  <a href="https://github.com/Open-yLorde" target="_blank" rel="noreferrer" className="hover:text-zinc-100 transition-colors">Open Source</a>
-                  <a href="https://orcid.org/0009-0001-4602-7589" target="_blank" rel="noreferrer" className="hover:text-zinc-100 transition-colors">ORCID</a>
-                  <a href="https://ylorde.com.br" target="_blank" rel="noreferrer" className="hover:text-zinc-100 transition-colors">ylorde.com.br</a>
+                  <a href="https://github.com/yLorde" draggable={false} target="_blank" rel="noreferrer" className="hover:text-zinc-100 transition-colors">GitHub</a>
+                  <a href="https://github.com/Open-yLorde" draggable={false} target="_blank" rel="noreferrer" className="hover:text-zinc-100 transition-colors">Open Source</a>
+                  <a href="https://orcid.org/0009-0001-4602-7589" draggable={false} target="_blank" rel="noreferrer" className="hover:text-zinc-100 transition-colors">ORCID</a>
+                  <a href="https://ylorde.com.br" draggable={false} target="_blank" rel="noreferrer" className="hover:text-zinc-100 transition-colors">ylorde.com.br</a>
                 </div>
               </div>
             </div>
