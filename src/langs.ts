@@ -1,3 +1,5 @@
+import { certificatesEn, certificatesPt } from "./certificates";
+
 export const langs = {
     pt: {
         nav: { projects: "Projetos", stack: "Stack", certificates: "Certificados", contact: "Contato" },
@@ -17,18 +19,7 @@ export const langs = {
             { k: "Infra", v: "Docker, Docker Compose, Linux" },
         ],
         certificatesTitle: "Certificados",
-        certificates: [
-            {
-                type: "Bootcamp", title: "Boas vindas ao Bootcamp Itaú - Java com Inteligência Artificial", code: "KYT9BTCX",
-                live: ["Ver certificado", "Ver Emissor"],
-                url: ["/certificates/itau/KYT9BTCX.pdf", "https://dio.me/certificate/KYT9BTCX"],
-            },
-            {
-                type: "Bootcamp", title: "Fundamentos da IA Moderna: Machine Learning, LLMs, IA Generativa e Agentes", code: "MTBVF70J",
-                live: ["Ver Certificado", "Ver Emissor"],
-                url: ["/certificates/itau/MTBVF70J.pdf", "https://dio.me/certificate/MTBVF70J"]
-            },
-        ],
+        certificates: certificatesPt,
         projectsTitle: "Projetos em Destaque",
         projectsSub:
             "Uma seleção de ferramentas e aplicações desenvolvidas para resolver problemas reais de gerenciamento e automação.",
@@ -57,18 +48,7 @@ export const langs = {
             { k: "Infra", v: "Docker, Docker Compose, Linux" },
         ],
         certificatesTitle: "Certificates",
-        certificates: [
-            {
-                type: "Bootcamp", title: "Welcome to the Itaú Bootcamp - Java with Artificial Intelligence", code: "KYT9BTCX",
-                live: ["View Certificate", "View Issuer"],
-                url: ["/certificates/itau/KYT9BTCX.pdf", "https://dio.me/certificate/KYT9BTCX"],
-            },
-            {
-                type: "Bootcamp", title: "Fundamentals of Modern AI: Machine Learning, LLMs, Generative AI, and Agents", code: "MTBVF70J",
-                live: ["View Certificate", "View Issuer"],
-                url: ["/certificates/itau/MTBVF70J.pdf", "https://dio.me/certificate/MTBVF70J"],
-            },
-        ],
+        certificates: certificatesEn,
         projectsTitle: "Featured Projects",
         projectsSub:
             "A selection of tools and applications built to solve real problems in media management and automation.",
