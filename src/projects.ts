@@ -8,7 +8,7 @@ export const projects: Project[] = [
         descEn: "Node Module to build API consumers in a simple way.",
         techs: ["TypeScript", "Node.js"],
         repo: "https://github.com/Open-yLorde/easy-api-consumer",
-        live: "https://npmjs.com/package/easy-api-consumer",
+        live: "https://eac.ylorde.com.br",
         initials: "EA",
         hue: "from-cyan-500/20 via-cyan-500/5 to-transparent",
     },
