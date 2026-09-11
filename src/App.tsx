@@ -17,8 +17,9 @@ export function App() {
           </a>
           <div className="flex items-center gap-6">
             <div className="hidden sm:flex gap-5">
-              <a href="#projetos" className="text-xs text-zinc-500 hover:text-zinc-200 transition-colors">{c.nav.projects}</a>
               <a href="#stack" className="text-xs text-zinc-500 hover:text-zinc-200 transition-colors">{c.nav.stack}</a>
+              <a href="#certificates" className="text-xs text-zinc-500 hover:text-zinc-200 transition-colors">{c.nav.certificates}</a>
+              <a href="#projetos" className="text-xs text-zinc-500 hover:text-zinc-200 transition-colors">{c.nav.projects}</a>
               <a href="#contato" className="text-xs text-zinc-500 hover:text-zinc-200 transition-colors">{c.nav.contact}</a>
             </div>
             <div className="h-4 w-px bg-zinc-800 hidden sm:block" />
@@ -62,10 +63,10 @@ export function App() {
             }}
           />
           <div className="max-w-5xl mx-auto px-6">
-            <div className="inline-flex items-center gap-2 px-2.5 py-0.5 rounded-full bg-primary/10 ring-1 ring-primary/20 text-primary mb-6">
+            {/* <div className="inline-flex items-center gap-2 px-2.5 py-0.5 rounded-full bg-primary/10 ring-1 ring-primary/20 text-primary mb-6">
               <span className="size-1.5 rounded-full bg-primary animate-pulse" />
               <span className="text-[10px] font-medium uppercase tracking-wider">{c.badge}</span>
-            </div>
+            </div> */}
             <h1 className="text-4xl md:text-6xl font-semibold tracking-tight leading-tight md:leading-[1.05] text-balance mb-8">
               {c.heroTitle}
               <br />
@@ -105,6 +106,39 @@ export function App() {
                 >
                   <div className="text-xs font-medium text-primary font-mono">{s.k}</div>
                   <div className="text-sm text-zinc-300 leading-relaxed">{s.v}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Diplomas */}
+        <section id="certificates" className="py-16 border-t border-zinc-900/60">
+          <div className="max-w-5xl mx-auto px-6 flex flex-col relative">
+            <h2 className="text-xs font-medium text-zinc-500 uppercase tracking-[0.2em] mb-10 font-mono">
+              {c.certificatesTitle}
+            </h2>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 flex-1 flex-col">
+              {c.certificates.map((s) => (
+                <div
+                  key={s.code}
+                  className="p-4 rounded-xl bg-surface ring-1 ring-white/5 flex flex-col gap-3 hover:ring-white/10 transition-all"
+                >
+                  <div className="text-xs font-medium text-primary font-mono">{s.type}</div>
+                  <div className="text-sm text-zinc-300 leading-relaxed">{s.title}</div>
+                  <div className="mt-auto">
+                    {/* <hr className="opacity-10 pt-1" /> */}
+                    {s.live && (
+                      <a
+                        href={s.url}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-zinc-400 hover:text-primary transition-colors"
+                      >
+                        {s.live} ↗
+                      </a>
+                    )}
+                  </div>
                 </div>
               ))}
             </div>

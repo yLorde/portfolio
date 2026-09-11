@@ -1,6 +1,6 @@
 export const langs = {
     pt: {
-        nav: { projects: "Projetos", stack: "Stack", contact: "Contato" },
+        nav: { projects: "Projetos", stack: "Stack", certificates: "Certificados", contact: "Contato" },
         badge: "Disponível para novos projetos",
         heroTitle: "Davi de Sousa Amorim.",
         heroSub:
@@ -12,9 +12,14 @@ export const langs = {
         stackTitle: "Stack Técnica",
         stack: [
             { k: "Linguagens", v: "TypeScript, Rust, Python, JavaScript" },
-            { k: "Frontend", v: "React, Electron, Tailwind CSS" },
-            { k: "Backend", v: "Node.js, Actix (Rust), PostgreSQL" },
-            { k: "Infra", v: "Docker, SQLite, Linux" },
+            { k: "Frontend", v: "React, Next, Electron, Tailwind CSS" },
+            { k: "Backend", v: "Node.js, Actix (Rust), PostgreSQL, MongoDB" },
+            { k: "Infra", v: "Docker, Docker Compose, Linux" },
+        ],
+        certificatesTitle: "Certificados",
+        certificates: [
+            // { type: "Bootcamp", title: "Boas vindas ao Bootcamp Itaú - Java com Inteligência Artificial", code: "KYT9BTCX", url: "/certificates/itau/KYT9BTCX.pdf", live: "Ver certificado" },
+            { type: "Bootcamp", title: "Fundamentos da IA Moderna: Machine Learning, LLMs, IA Generativa e Agentes", code: "MTBVF70J", url: "/certificates/itau/MTBVF70J.pdf", live: "Ver certificado" },
         ],
         projectsTitle: "Projetos em Destaque",
         projectsSub:
@@ -27,7 +32,7 @@ export const langs = {
         footer: "Construído com foco em performance.",
     },
     en: {
-        nav: { projects: "Projects", stack: "Stack", contact: "Contact" },
+        nav: { projects: "Projects", stack: "Stack", certificates: "Certificates", contact: "Contact" },
         badge: "Available for new projects",
         heroTitle: "Davi de Sousa Amorim.",
         heroSub:
@@ -39,9 +44,14 @@ export const langs = {
         stackTitle: "Technical Stack",
         stack: [
             { k: "Languages", v: "TypeScript, Rust, Python, JavaScript" },
-            { k: "Frontend", v: "React, Electron, Tailwind CSS" },
-            { k: "Backend", v: "Node.js, Actix (Rust), PostgreSQL" },
-            { k: "Infra", v: "Docker, SQLite, Linux" },
+            { k: "Frontend", v: "React, Next, Electron, Tailwind CSS" },
+            { k: "Backend", v: "Node.js, Actix (Rust), PostgreSQL, MongoDB" },
+            { k: "Infra", v: "Docker, Docker Compose, Linux" },
+        ],
+        certificatesTitle: "Certificates",
+        certificates: [
+            // { type: "Bootcamp", title: "Welcome to the Itaú Bootcamp – Java with Artificial Intelligence", code: "KYT9BTCX", url: "/certificates/itau/KYT9BTCX.pdf", live: "View Certificate" },
+            { type: "Bootcamp", title: "Fundamentals of Modern AI: Machine Learning, LLMs, Generative AI, and Agents", code: "MTBVF70J", url: "/certificates/itau/MTBVF70J.pdf", live: "View Certificate" },
         ],
         projectsTitle: "Featured Projects",
         projectsSub:
