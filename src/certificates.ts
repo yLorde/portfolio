@@ -33,8 +33,8 @@ export const certificates: ICertificates[] = [
     },
     {
         type: "Bootcamp",
-        title: "DIO Agent: Nunca Mais Estude Sozinho", code: "3TOJA4LO",
+        title: "DIO Agent: Nunca Mais Estude Sozinho", code: "3TOJA4L0",
         live: ["Ver Certificado", "Ver Emissor"],
-        url: ["certificates/itau/3TOJA4LO.pdf", "https://dio.me/certificate/3TOJA4LO"],
+        url: ["certificates/itau/3TOJA4L0.pdf", "https://dio.me/certificate/3TOJA4L0"],
     },
 ];
