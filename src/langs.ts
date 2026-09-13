@@ -1,4 +1,4 @@
-import { certificatesEn, certificatesPt } from "./certificates";
+import { certificates, mainCertificates } from "./certificates";
 
 export const langs = {
     pt: {
@@ -18,8 +18,10 @@ export const langs = {
             { k: "Backend", v: "Node.js, Actix (Rust), PostgreSQL, MongoDB" },
             { k: "Infra", v: "Docker, Docker Compose, Linux" },
         ],
-        certificatesTitle: "Certificados",
-        certificates: certificatesPt,
+        mainCertificatesTitle: "Principais Certificados",
+        certificatesTitle: "Todos os Certificados",
+        mainCertificates,
+        certificates,
         projectsTitle: "Projetos em Destaque",
         projectsSub:
             "Uma seleção de ferramentas e aplicações desenvolvidas para resolver problemas reais de gerenciamento e automação.",
@@ -47,8 +49,10 @@ export const langs = {
             { k: "Backend", v: "Node.js, Actix (Rust), PostgreSQL, MongoDB" },
             { k: "Infra", v: "Docker, Docker Compose, Linux" },
         ],
-        certificatesTitle: "Certificates",
-        certificates: certificatesEn,
+        mainCertificatesTitle: "Main Certificates",
+        certificatesTitle: "All Certificates",
+        mainCertificates,
+        certificates,
         projectsTitle: "Featured Projects",
         projectsSub:
             "A selection of tools and applications built to solve real problems in media management and automation.",
