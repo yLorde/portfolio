@@ -2,6 +2,7 @@ import { useState } from "react";
 import type { Lang } from "./types/lang";
 import { langs } from "./langs";
 import { projects } from "./projects";
+import { CertificatesSlider } from "./components/CertificatesSlider";
 
 export function App() {
   const [lang, setLang] = useState<Lang>("pt");
@@ -115,14 +116,14 @@ export function App() {
           </div>
         </section>
 
-        {/* Certificate */}
-        <section id="certificates" className="py-16 border-t border-zinc-900/60">
+        {/* Main certificates */}
+        <section id="certificates" className="py-8 border-t border-zinc-900/60">
           <div className="max-w-5xl mx-auto px-6 flex flex-col relative">
             <h2 className="text-xs font-medium text-zinc-500 uppercase tracking-[0.2em] mb-10 font-mono">
-              {c.certificatesTitle}
+              {c.mainCertificatesTitle}
             </h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 flex-1 flex-col">
-              {c.certificates.map((s) => (
+              {c.mainCertificates.map((s) => (
                 <div
                   key={s.code}
                   className="p-4 rounded-xl bg-surface ring-1 ring-white/5 flex flex-col gap-3 hover:ring-white/10 transition-all"
@@ -158,6 +159,20 @@ export function App() {
                 </div>
               ))}
             </div>
+          </div>
+        </section>
+
+        {/* All Certificate */}
+        <section id="all-certificates" className="py-8 border-t border-zinc-900/60">
+          <div className="max-w-5xl mx-auto px-6 flex flex-col relative">
+            <CertificatesSlider
+              certificates={c.certificates}
+              title={
+                <h2 className="text-xs font-medium text-zinc-500 uppercase tracking-[0.2em] font-mono">
+                  {c.certificatesTitle}
+                </h2>
+              }
+            />
           </div>
         </section>
 
