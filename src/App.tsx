@@ -273,7 +273,7 @@ export function App() {
                 </a>
                 <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-zinc-500">
                   <a href="https://github.com/yLorde" draggable={false} target="_blank" rel="noreferrer" className="hover:text-zinc-100 transition-colors">GitHub</a>
-                  <a href="https://github.com/Open-yLorde" draggable={false} target="_blank" rel="noreferrer" className="hover:text-zinc-100 transition-colors">Open Source</a>
+                  <a href="https://github.com/OpenyLab" draggable={false} target="_blank" rel="noreferrer" className="hover:text-zinc-100 transition-colors">Open Source</a>
                   <a href="https://orcid.org/0009-0001-4602-7589" draggable={false} target="_blank" rel="noreferrer" className="hover:text-zinc-100 transition-colors">ORCID</a>
                   <a href="https://ylorde.com.br" draggable={false} target="_blank" rel="noreferrer" className="hover:text-zinc-100 transition-colors">ylorde.com.br</a>
                 </div>
