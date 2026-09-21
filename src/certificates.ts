@@ -11,6 +11,11 @@ export const mainCertificates: ICertificates[] = [
         live: ["Ver Certificado", "Ver Emissor"],
         url: ["/certificates/alura/5f4ef245-6f6c-4677-9958-5118660f9239.pdf", "https://cursos.alura.com.br/immersion/certificate/5f4ef245-6f6c-4677-9958-5118660f9239"]
     },
+    {
+        type: "Curso", title: "Responsabilidade Jurídica nos Ambientes Digitais", code: "99601789997025",
+        live: ["Ver Certificado"],
+        url: ["/certificates/gran-faculdade/99601789997025.pdf"]
+    },
 ];
 
 export const certificates: ICertificates[] = [
