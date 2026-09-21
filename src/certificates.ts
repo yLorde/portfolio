@@ -16,6 +16,11 @@ export const mainCertificates: ICertificates[] = [
         live: ["Ver Certificado"],
         url: ["/certificates/gran-faculdade/99601789997025.pdf"]
     },
+    {
+        type: "Mini Curso", title: "Segurança e Boas Práticas em Projetos Feitos com Vibe Code", code: "GYK9BJR1",
+        live: ["Ver Certificado", "Ver Emissor"],
+        url: ["/certificates/santander/GYK9BJR1.pdf", "https://dio.me/certificate/GYK9BJR1"],
+    },
 ];
 
 export const certificates: ICertificates[] = [
