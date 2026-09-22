@@ -46,6 +46,18 @@ export const certificates: ICertificates[] = [
         live: ["Ver Certificado", "Ver Emissor"],
         url: ["certificates/itau/XTAHJBE3.pdf", "https://dio.me/certificate/XTAHJBE3"],
     },
+    {
+        type: "Bootcamp",
+        title: "Introdução ao Java e seu Ambiente de Desenvolvimento", code: "AMEN7QTZ",
+        live: ["Ver Certificado", "Ver Emissor"],
+        url: ["certificates/itau/AMEN7QTZ.pdf", "https://dio.me/certificate/AMEN7QTZ"],
+    },
+    {
+        type: "Bootcamp",
+        title: "Java e a Arte da Abstração com Classes e Encapsulamento", code: "AG1JAEC1",
+        live: ["Ver Certificado", "Ver Emissor"],
+        url: ["certificates/itau/AG1JAEC1.pdf", "https://dio.me/certificate/AG1JAEC1"],
+    },
     // {
     //     type: "Bootcamp",
     //     title: "DIO Agent: Nunca Mais Estude Sozinho", code: "3TOJA4L0",
