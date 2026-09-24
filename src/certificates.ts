@@ -35,6 +35,12 @@ export const certificates: ICertificates[] = [
         url: ["/certificates/itau/MTBVF70J.pdf", "https://dio.me/certificate/MTBVF70J"]
     },
     {
+        "type": "Mini Curso", code: "IL8UON4U",
+        title: "Cibersegurança do Zero à Prática",
+        live: ["Ver Certificado", "Ver Emissor"],
+        url: ["certificates/santander/IL8UON4U.pdf", "https://dio.me/certificate/IL8UON4U"],
+    },
+    {
         type: "Bootcamp",
         title: "Potencializando Seus Estudos e Carreira com IA (Chatbots, Copilotos e Agentes)", code: "WG6XOXWD",
         live: ["Ver Certificado", "Ver Emissor"],
@@ -54,9 +60,21 @@ export const certificates: ICertificates[] = [
     },
     {
         type: "Bootcamp",
+        title: "Fundamentos da Sintaxe da Linguagem Java", code: "WO55UZBT",
+        live: ["Ver Certificado", "Ver Emissor"],
+        url: ["certificates/itau/WO55UZBT.pdf", "https://dio.me/certificate/WO55UZBT"],
+    },
+    {
+        type: "Bootcamp",
         title: "Java e a Arte da Abstração com Classes e Encapsulamento", code: "AG1JAEC1",
         live: ["Ver Certificado", "Ver Emissor"],
         url: ["certificates/itau/AG1JAEC1.pdf", "https://dio.me/certificate/AG1JAEC1"],
+    },
+    {
+        type: "Bootcamp",
+        title: "Estruturas de Controle em Java", code: "NPGEE1H0",
+        live: ["Ver Certificado", "Ver Emissor"],
+        url: ["certificates/itau/NPGEE1H0.pdf", "https://dio.me/certificate/NPGEE1H0"],
     },
     // {
     //     type: "Bootcamp",
