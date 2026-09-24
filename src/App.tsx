@@ -3,6 +3,7 @@ import type { Lang } from "./types/lang";
 import { langs } from "./langs";
 import { projects } from "./projects";
 import { CertificatesSlider } from "./components/CertificatesSlider";
+import { certificates } from "./certificates";
 
 export function App() {
   const [lang, setLang] = useState<Lang>("pt");
@@ -169,7 +170,7 @@ export function App() {
               certificates={c.certificates}
               title={
                 <h2 className="text-xs font-medium text-zinc-500 uppercase tracking-[0.2em] font-mono">
-                  {c.certificatesTitle}
+                  {c.certificatesTitle} ({certificates.length})
                 </h2>
               }
             />

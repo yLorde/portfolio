@@ -42,24 +42,24 @@ export function CertificatesSlider({
       <div className="mb-10 flex items-center justify-between gap-4">
         {title}
         <div className="flex shrink-0 items-center gap-2">
-        <button
-          type="button"
-          aria-label="Certificados anteriores"
-          disabled={!canPrev}
-          onClick={() => scrollPage(-1)}
-          className="grid size-8 place-items-center rounded-full bg-zinc-900 text-zinc-300 ring-1 ring-white/10 transition-colors hover:text-zinc-100 hover:ring-white/20 disabled:pointer-events-none disabled:opacity-30"
-        >
-          <ChevronLeft className="size-4" />
-        </button>
-        <button
-          type="button"
-          aria-label="Próximos certificados"
-          disabled={!canNext}
-          onClick={() => scrollPage(1)}
-          className="grid size-8 place-items-center rounded-full bg-zinc-900 text-zinc-300 ring-1 ring-white/10 transition-colors hover:text-zinc-100 hover:ring-white/20 disabled:pointer-events-none disabled:opacity-30"
-        >
-          <ChevronRight className="size-4" />
-        </button>
+          <button
+            type="button"
+            aria-label="Certificados anteriores"
+            disabled={!canPrev}
+            onClick={() => scrollPage(-1)}
+            className="grid size-8 place-items-center rounded-full bg-zinc-900 text-zinc-300 ring-1 ring-white/10 transition-colors hover:text-zinc-100 hover:ring-white/20 disabled:pointer-events-none disabled:opacity-30"
+          >
+            <ChevronLeft className="size-4" />
+          </button>
+          <button
+            type="button"
+            aria-label="Próximos certificados"
+            disabled={!canNext}
+            onClick={() => scrollPage(1)}
+            className="grid size-8 place-items-center rounded-full bg-zinc-900 text-zinc-300 ring-1 ring-white/10 transition-colors hover:text-zinc-100 hover:ring-white/20 disabled:pointer-events-none disabled:opacity-30"
+          >
+            <ChevronRight className="size-4" />
+          </button>
         </div>
       </div>
 
