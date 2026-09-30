@@ -76,6 +76,12 @@ export const certificates: ICertificates[] = [
         live: ["Ver Certificado", "Ver Emissor"],
         url: ["certificates/itau/NPGEE1H0.pdf", "https://dio.me/certificate/NPGEE1H0"],
     },
+    {
+        type: "Bootcamp",
+        title: "Herança e Polimorfismo em Java", code: "ZYO9RII5",
+        live: ["Ver Certificado", "Ver Emissor"],
+        url: ["certificates/itau/ZYO9RII5.pdf", "https://dio.me/certificate/ZYO9RII5"],
+    },
     // {
     //     type: "Bootcamp",
     //     title: "DIO Agent: Nunca Mais Estude Sozinho", code: "3TOJA4L0",
